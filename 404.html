@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOTEE® — Lost in orbit</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F3EEE6">
+  <link rel="icon" type="image/svg+xml" href="/logos/A07_monigote-de-pie.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .lost {
+      min-height: 100dvh;
+      display: grid; place-items: center; text-align: center;
+      padding: 96px 16px 64px;
+    }
+    .lost__inner { display: flex; flex-direction: column; align-items: center; }
+    .lost__mon { width: min(70vw, 320px); margin-bottom: 40px; animation: flotar 6s ease-in-out infinite; }
+    .lost__mon img { width: 100%; height: auto; animation: girarLento 40s linear infinite; }
+    .lost .hero__title { font-size: clamp(52px, 10vw, 120px); }
+    .lost p { max-width: 36ch; margin: 20px 0 36px; color: var(--suave); font-size: 18px; }
+    .lost__code { font: 500 12px/1 var(--mono); letter-spacing: .12em; color: var(--suave); margin-bottom: 18px; }
+    @keyframes flotar { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+    @keyframes girarLento { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+  </style>
+</head>
+<body>
+  <header class="nav is-scrolled">
+    <a href="/" class="nav__logo" aria-label="GOTEE">
+      <img src="/logos/A01_clasico.svg" alt="GOTEE" style="height:30px;width:auto">
+    </a>
+  </header>
+
+  <main class="lost">
+    <div class="lost__inner">
+      <div class="lost__mon" aria-hidden="true"><img src="/logos/A04_monigote-orbita.svg" alt=""></div>
+      <span class="lost__code">ERROR 404</span>
+      <h1 class="hero__title" data-t="title">Perdido<br>en <em>órbita.</em></h1>
+      <p data-t="sub">Esta página no existe. El monigote tampoco sabe cómo ha llegado aquí.</p>
+      <a href="/" class="btn" data-t="btn">Volver al inicio</a>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var T = {
+        es: { title: "Perdido<br>en <em>órbita.</em>", sub: "Esta página no existe. El monigote tampoco sabe cómo ha llegado aquí.", btn: "Volver al inicio" },
+        en: { title: "Lost<br>in <em>orbit.</em>", sub: "This page doesn't exist. The little guy doesn't know how he got here either.", btn: "Back home" }
+      };
+      var lang;
+      try { lang = localStorage.getItem("gotee-lang"); } catch (e) {}
+      if (!lang) lang = (navigator.language || "es").toLowerCase().indexOf("es") === 0 ? "es" : "en";
+      var t = T[lang] || T.es;
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-t]").forEach(function (el) { el.innerHTML = t[el.getAttribute("data-t")]; });
+      document.title = lang === "es" ? "GOTEE® — Perdido en órbita" : "GOTEE® — Lost in orbit";
+    })();
+  </script>
+</body>
+</html>
+
+

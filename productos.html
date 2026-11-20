@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Productos — GOTEE®</title>
+  <meta name="description" content="El armario de GOTEE: la Sudadera Rayas y la Camiseta Ancha del Drop 01, en todos sus colores.">
+  <meta name="theme-color" content="#F3EEE6">
+  <link rel="icon" type="image/svg+xml" href="logos/A07_monigote-de-pie.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=13">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body data-page="productos">
+
+<!-- CABECERA (igual en todas las páginas) -->
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__logo" aria-label="GOTEE">
+    <svg viewBox="0 0 303 129" aria-hidden="true"><use href="sprite.svg#logo-a01"/></svg>
+  </a>
+  <nav class="nav__links" aria-label="Menú">
+    <a href="productos.html" data-i18n="nav.productos">Productos</a>
+    <a href="showroom.html" data-i18n="nav.showroom">Showroom</a>
+    <a href="lookbook.html" data-i18n="nav.lookbook">Lookbook</a>
+    <a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a>
+  </nav>
+  <div class="nav__right">
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a href="lista.html" class="btn btn--small nav__cta" data-i18n="nav.cta">Lista de espera</a>
+    <button type="button" class="nav__burger" aria-expanded="false" aria-controls="menu" aria-label="Menú"><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav class="menu__links" aria-label="Menú">
+    <a href="index.html"><small>00</small><span data-i18n="nav.inicio">Inicio</span></a>
+    <a href="productos.html"><small>01</small><span data-i18n="nav.productos">Productos</span></a>
+    <a href="showroom.html"><small>02</small><span data-i18n="nav.showroom">Showroom</span></a>
+    <a href="lookbook.html"><small>03</small><span data-i18n="nav.lookbook">Lookbook</span></a>
+    <a href="nosotros.html"><small>04</small><span data-i18n="nav.nosotros">Nosotros</span></a>
+    <a href="lista.html"><small>05</small><span data-i18n="nav.cta">Lista de espera</span></a>
+  </nav>
+  <p class="menu__foot">Gotee Studio® · Orbiting Andalusia</p>
+</div>
+
+<main class="pagina">
+
+  <section class="closet-head">
+    <div>
+      <p class="label reveal" data-i18n="pr.label">Drop 01 · El armario</p>
+      <h1 class="page-title reveal" data-i18n="pr.title">Productos</h1>
+    </div>
+    <div class="filtros reveal" role="group" aria-label="Filtrar">
+      <button type="button" data-filtro="todo" aria-pressed="true"><span data-i18n="f.todo">Todo</span><sup>10</sup></button>
+      <button type="button" data-filtro="sud" aria-pressed="false"><span data-i18n="f.sud">Sudaderas</span><sup>5</sup></button>
+      <button type="button" data-filtro="tee" aria-pressed="false"><span data-i18n="f.tee">Camisetas</span><sup>5</sup></button>
+    </div>
+  </section>
+
+  <section class="rack-wrap">
+    <div class="rack" data-rack>
+      <div class="rack__spot" aria-hidden="true"></div>
+      <div class="rack__bar" aria-hidden="true"></div>
+      <div class="rack__items" data-rack-items></div>
+      <div class="rack__floor" aria-hidden="true"></div>
+    </div>
+
+    <div class="rack__info">
+      <button type="button" class="rack__nav" data-rack-prev data-i18n-aria="fo.prev" aria-label="Anterior">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="rack__text" aria-live="polite">
+        <p class="rack__count" data-rack-count>01 / 10</p>
+        <h2 class="rack__name" data-rack-name>Sudadera Rayas</h2>
+        <p class="rack__color"><i data-rack-dot></i><span data-rack-color>Marrón / Azul claro</span></p>
+        <a class="btn rack__go" href="producto.html?p=sud&amp;c=marron" data-rack-link><span data-i18n="p.ver">Ver producto</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <button type="button" class="rack__nav" data-rack-next data-i18n-aria="fo.next" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <p class="closet__hint" data-rack-hint>Pasa por encima para ver cada prenda · pulsa para abrirla</p>
+    <button type="button" class="btn" data-cloth-demo style="display:block;margin:12px auto">Mover la tela</button>
+  </section>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="percha" viewBox="0 0 120 56">
+      <path d="M60 22 L8 46 C3 48.5 4.5 54 10 54 H110 C115.5 54 117 48.5 112 46 Z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+</main>
+
+<!-- PIE (igual en todas las páginas) -->
+<footer class="foot">
+  <svg class="foot__g" viewBox="0 0 273 148" aria-hidden="true"><use href="sprite.svg#logo-a11"/></svg>
+  <nav class="foot__links" aria-label="Pie">
+    <a href="productos.html" data-i18n="nav.productos">Productos</a>
+    <a href="showroom.html" data-i18n="nav.showroom">Showroom</a>
+    <a href="lookbook.html" data-i18n="nav.lookbook">Lookbook</a>
+    <a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a>
+    <a href="lista.html" data-i18n="nav.cta">Lista de espera</a>
+    <a href="#" data-social="instagram">Instagram</a>
+    <a href="#" data-social="tiktok">TikTok</a>
+  </nav>
+  <p class="foot__copy" data-i18n="foot.copy">Gotee Studio® · Est. 2026, Andalucía.</p>
+</footer>
+
+<script src="app.js?v=13"></script>
+<script src="catalogo.js?v=13"></script>
+<script src="tela.js?v=13"></script>
+<script src="armario.js?v=13"></script>
+</body>
+</html>
+
+
+
+

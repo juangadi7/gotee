@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Showroom — GOTEE®</title>
+  <meta name="description" content="El showroom de GOTEE: elige una prenda del Drop 01 y mira cómo queda puesta.">
+  <meta name="theme-color" content="#F3EEE6">
+  <link rel="icon" type="image/svg+xml" href="logos/A07_monigote-de-pie.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=13">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body data-page="showroom">
+
+<!-- CABECERA (igual en todas las páginas) -->
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__logo" aria-label="GOTEE">
+    <svg viewBox="0 0 303 129" aria-hidden="true"><use href="sprite.svg#logo-a01"/></svg>
+  </a>
+  <nav class="nav__links" aria-label="Menú">
+    <a href="productos.html" data-i18n="nav.productos">Productos</a>
+    <a href="showroom.html" data-i18n="nav.showroom">Showroom</a>
+    <a href="lookbook.html" data-i18n="nav.lookbook">Lookbook</a>
+    <a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a>
+  </nav>
+  <div class="nav__right">
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a href="lista.html" class="btn btn--small nav__cta" data-i18n="nav.cta">Lista de espera</a>
+    <button type="button" class="nav__burger" aria-expanded="false" aria-controls="menu" aria-label="Menú"><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav class="menu__links" aria-label="Menú">
+    <a href="index.html"><small>00</small><span data-i18n="nav.inicio">Inicio</span></a>
+    <a href="productos.html"><small>01</small><span data-i18n="nav.productos">Productos</span></a>
+    <a href="showroom.html"><small>02</small><span data-i18n="nav.showroom">Showroom</span></a>
+    <a href="lookbook.html"><small>03</small><span data-i18n="nav.lookbook">Lookbook</span></a>
+    <a href="nosotros.html"><small>04</small><span data-i18n="nav.nosotros">Nosotros</span></a>
+    <a href="lista.html"><small>05</small><span data-i18n="nav.cta">Lista de espera</span></a>
+  </nav>
+  <p class="menu__foot">Gotee Studio® · Orbiting Andalusia</p>
+</div>
+
+<main class="pagina pagina--sala">
+
+  <section class="sala" data-sala>
+    <!-- la habitación -->
+    <div class="sala__pared" aria-hidden="true">
+      <svg class="sala__arco" viewBox="0 0 300 420" preserveAspectRatio="xMidYMax meet"><path d="M20 420 V150 A130 130 0 0 1 280 150 V420 Z"/></svg>
+      <div class="sala__luz"></div>
+      <div class="sala__luz sala__luz--2"></div>
+    </div>
+    <div class="sala__suelo" aria-hidden="true"><div class="sala__charco"></div></div>
+    <div class="maceta maceta--izq" aria-hidden="true">
+      <svg viewBox="0 0 160 300"><g class="hojas"><path d="M80 210 C70 150 40 120 18 96 C46 104 70 132 80 170Z"/><path d="M80 200 C88 140 120 104 146 86 C128 120 100 150 84 190Z"/><path d="M80 190 C76 120 82 60 96 18 C100 70 92 130 84 186Z"/><path d="M80 214 C60 180 26 170 6 166 C34 160 64 176 82 204Z"/><path d="M82 210 C104 178 136 172 156 172 C130 182 104 194 86 214Z"/></g><path class="tallo" d="M80 214 V160"/><path class="tiesto" d="M44 210 H116 L106 296 H54 Z"/></svg>
+    </div>
+    <div class="maceta maceta--der" aria-hidden="true">
+      <svg viewBox="0 0 160 300"><g class="hojas"><path d="M80 210 C74 160 52 110 30 70 C64 96 82 150 84 200Z"/><path d="M82 206 C92 150 118 116 150 104 C126 134 104 168 88 206Z"/><path d="M80 200 C80 140 70 80 70 30 C88 80 90 140 84 198Z"/><path d="M80 212 C58 188 30 186 10 192 C36 176 62 184 82 206Z"/></g><path class="tallo" d="M80 214 V150"/><path class="tiesto" d="M48 212 H112 L104 296 H56 Z"/></svg>
+    </div>
+
+    <!-- la chica -->
+    <div class="modelo" data-modelo>
+      <img src="img/showroom/look-sud-marron.webp" alt="" class="modelo__img is-on" data-capa>
+      <img src="img/showroom/look-sud-marron.webp" alt="" class="modelo__img" data-capa aria-hidden="true">
+      <div class="modelo__barrido" aria-hidden="true"></div>
+    </div>
+
+    <!-- lo que lleva puesto -->
+    <div class="sala__info">
+      <p class="label"><span class="dot"></span><span data-i18n="sh.label">Showroom · Drop 01</span></p>
+      <h1 class="sala__titulo" data-sh-nombre>Sudadera Rayas</h1>
+      <p class="sala__color"><i data-sh-dot></i><span data-sh-color>Marrón / Azul claro</span></p>
+      <a class="btn sala__go" href="producto.html?p=sud&amp;c=marron" data-sh-link><span data-i18n="p.ver">Ver producto</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <p class="sala__pronto" data-sh-pronto hidden data-i18n="sh.pronto">Próximamente en la tienda</p>
+    </div>
+
+    <button type="button" class="sala__auto" data-sh-auto aria-pressed="true">
+      <span class="sala__auto-barra"><i data-sh-progreso></i></span><span data-i18n="sh.auto">Pasarela</span>
+    </button>
+  </section>
+
+  <!-- las prendas para elegir -->
+  <section class="perchas">
+    <div class="perchas__head">
+      <p class="perchas__hint" data-i18n="sh.hint">Elige una prenda y ella se la pone</p>
+      <div class="perchas__nav">
+        <button type="button" class="rack__nav" data-sh-prev data-i18n-aria="fo.prev" aria-label="Anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button type="button" class="rack__nav" data-sh-next data-i18n-aria="fo.next" aria-label="Siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+    </div>
+    <ul class="tarjetas" role="radiogroup" aria-label="Prendas" data-sh-tarjetas></ul>
+  </section>
+</main>
+
+<!-- PIE (igual en todas las páginas) -->
+<footer class="foot">
+  <svg class="foot__g" viewBox="0 0 273 148" aria-hidden="true"><use href="sprite.svg#logo-a11"/></svg>
+  <nav class="foot__links" aria-label="Pie">
+    <a href="productos.html" data-i18n="nav.productos">Productos</a>
+    <a href="showroom.html" data-i18n="nav.showroom">Showroom</a>
+    <a href="lookbook.html" data-i18n="nav.lookbook">Lookbook</a>
+    <a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a>
+    <a href="lista.html" data-i18n="nav.cta">Lista de espera</a>
+    <a href="#" data-social="instagram">Instagram</a>
+    <a href="#" data-social="tiktok">TikTok</a>
+  </nav>
+  <p class="foot__copy" data-i18n="foot.copy">Gotee Studio® · Est. 2026, Andalucía.</p>
+</footer>
+
+<script src="app.js?v=13"></script>
+<script src="catalogo.js?v=13"></script>
+<script src="showroom.js?v=13"></script>
+</body>
+</html>

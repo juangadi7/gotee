@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lista de espera — GOTEE®</title>
+  <meta name="description" content="Apúntate a la lista de espera del Drop 01 de GOTEE y entra antes que nadie.">
+  <meta name="theme-color" content="#F3EEE6">
+  <link rel="icon" type="image/svg+xml" href="logos/A07_monigote-de-pie.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=13">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body data-page="lista">
+
+<!-- CABECERA (igual en todas las páginas) -->
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__logo" aria-label="GOTEE">
+    <svg viewBox="0 0 303 129" aria-hidden="true"><use href="sprite.svg#logo-a01"/></svg>
+  </a>
+  <nav class="nav__links" aria-label="Menú">
+    <a href="productos.html" data-i18n="nav.productos">Productos</a>
+    <a href="showroom.html" data-i18n="nav.showroom">Showroom</a>
+    <a href="lookbook.html" data-i18n="nav.lookbook">Lookbook</a>
+    <a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a>
+  </nav>
+  <div class="nav__right">
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a href="lista.html" class="btn btn--small nav__cta" data-i18n="nav.cta">Lista de espera</a>
+    <button type="button" class="nav__burger" aria-expanded="false" aria-controls="menu" aria-label="Menú"><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav class="menu__links" aria-label="Menú">
+    <a href="index.html"><small>00</small><span data-i18n="nav.inicio">Inicio</span></a>
+    <a href="productos.html"><small>01</small><span data-i18n="nav.productos">Productos</span></a>
+    <a href="showroom.html"><small>02</small><span data-i18n="nav.showroom">Showroom</span></a>
+    <a href="lookbook.html"><small>03</small><span data-i18n="nav.lookbook">Lookbook</span></a>
+    <a href="nosotros.html"><small>04</small><span data-i18n="nav.nosotros">Nosotros</span></a>
+    <a href="lista.html"><small>05</small><span data-i18n="nav.cta">Lista de espera</span></a>
+  </nav>
+  <p class="menu__foot">Gotee Studio® · Orbiting Andalusia</p>
+</div>
+
+<main class="pagina">
+
+  <section class="lista">
+    <div class="lista__main">
+      <p class="label reveal"><span class="dot"></span><span data-i18n="li.label">Drop 01 · Lista de espera</span></p>
+      <h1 class="page-title page-title--xl reveal" data-i18n-html="final.title">Quédate<br>en el <em>drop.</em></h1>
+      <p class="page-intro reveal" data-i18n="final.sub">No te pierdas ni una gota.</p>
+      <form class="form form--big reveal" novalidate data-form data-origen="lista">
+        <label class="form__label" for="email-l" data-i18n="form.label">Tu email</label>
+        <div class="form__row">
+          <input id="email-l" name="email" type="email" autocomplete="email" inputmode="email" data-i18n-ph="form.ph" placeholder="tu@email.com" required>
+          <button type="submit" class="btn" data-magnetic><span data-i18n="form.btn">Avisarme</span></button>
+        </div>
+        <p class="form__note" data-i18n="form.note">Un correo cuando salga. Nada más.</p>
+        <p class="form__error" role="alert" aria-live="polite"></p>
+        <div class="form__ok" aria-live="polite" hidden>
+          <svg viewBox="0 0 150 245" aria-hidden="true"><use href="sprite.svg#mon-a07"/></svg>
+          <p data-i18n="form.ok">Dentro. Te avisamos el día del drop.</p>
+        </div>
+      </form>
+    </div>
+
+    <aside class="lista__side">
+      <div class="lista__mon reveal" data-follow aria-hidden="true">
+        <svg viewBox="0 0 150 245"><use href="sprite.svg#mon-a07"/></svg>
+      </div>
+      <ol class="pasos reveal">
+        <li><span>01</span><p data-i18n="li.s1">Te apuntas con tu email.</p></li>
+        <li><span>02</span><p data-i18n="li.s2">El día del drop te llega un correo.</p></li>
+        <li><span>03</span><p data-i18n="li.s3">Entras antes que nadie.</p></li>
+      </ol>
+      <div class="contacto reveal">
+        <p class="label" data-i18n="li.contact">Contacto</p>
+        <p data-i18n="li.contactTxt">Para colaboraciones, tiendas o cualquier cosa:</p>
+        <a class="contacto__mail" href="mailto:gotee.brand@gmail.com">gotee.brand@gmail.com</a>
+        <div class="contacto__redes">
+          <a href="#" data-social="instagram">Instagram</a>
+          <a href="#" data-social="tiktok">TikTok</a>
+        </div>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<!-- PIE (igual en todas las páginas) -->
+<footer class="foot">
+  <svg class="foot__g" viewBox="0 0 273 148" aria-hidden="true"><use href="sprite.svg#logo-a11"/></svg>
+  <nav class="foot__links" aria-label="Pie">
+    <a href="productos.html" data-i18n="nav.productos">Productos</a>
+    <a href="showroom.html" data-i18n="nav.showroom">Showroom</a>
+    <a href="lookbook.html" data-i18n="nav.lookbook">Lookbook</a>
+    <a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a>
+    <a href="lista.html" data-i18n="nav.cta">Lista de espera</a>
+    <a href="#" data-social="instagram">Instagram</a>
+    <a href="#" data-social="tiktok">TikTok</a>
+  </nav>
+  <p class="foot__copy" data-i18n="foot.copy">Gotee Studio® · Est. 2026, Andalucía.</p>
+</footer>
+
+<script src="app.js?v=13"></script>
+</body>
+</html>
+
+

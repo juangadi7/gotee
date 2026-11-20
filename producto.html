@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Producto — GOTEE®</title>
+  <meta name="description" content="Producto del Drop 01 de GOTEE.">
+  <meta name="theme-color" content="#F3EEE6">
+  <link rel="icon" type="image/svg+xml" href="logos/A07_monigote-de-pie.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=13">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body data-page="productos">
+
+<!-- CABECERA (igual en todas las páginas) -->
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__logo" aria-label="GOTEE">
+    <svg viewBox="0 0 303 129" aria-hidden="true"><use href="sprite.svg#logo-a01"/></svg>
+  </a>
+  <nav class="nav__links" aria-label="Menú">
+    <a href="productos.html" data-i18n="nav.productos">Productos</a>
+    <a href="showroom.html" data-i18n="nav.showroom">Showroom</a>
+    <a href="lookbook.html" data-i18n="nav.lookbook">Lookbook</a>
+    <a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a>
+  </nav>
+  <div class="nav__right">
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a href="lista.html" class="btn btn--small nav__cta" data-i18n="nav.cta">Lista de espera</a>
+    <button type="button" class="nav__burger" aria-expanded="false" aria-controls="menu" aria-label="Menú"><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav class="menu__links" aria-label="Menú">
+    <a href="index.html"><small>00</small><span data-i18n="nav.inicio">Inicio</span></a>
+    <a href="productos.html"><small>01</small><span data-i18n="nav.productos">Productos</span></a>
+    <a href="showroom.html"><small>02</small><span data-i18n="nav.showroom">Showroom</span></a>
+    <a href="lookbook.html"><small>03</small><span data-i18n="nav.lookbook">Lookbook</span></a>
+    <a href="nosotros.html"><small>04</small><span data-i18n="nav.nosotros">Nosotros</span></a>
+    <a href="lista.html"><small>05</small><span data-i18n="nav.cta">Lista de espera</span></a>
+  </nav>
+  <p class="menu__foot">Gotee Studio® · Orbiting Andalusia</p>
+</div>
+
+<main class="pagina">
+
+  <nav class="migas" aria-label="Migas">
+    <a href="productos.html" data-i18n="p.migas">Productos</a><span aria-hidden="true">/</span><span data-p-nombre>Sudadera Rayas</span>
+  </nav>
+
+  <section class="prod">
+    <div class="prod__galeria">
+      <figure class="prod__main" data-p-zoom>
+        <img src="img/armario/sud-marron-delante.webp" alt="" data-p-main>
+        <figcaption class="prod__cap" data-p-cap>Delante</figcaption>
+      </figure>
+      <div class="prod__thumbs" role="group" aria-label="Fotos" data-p-thumbs></div>
+      <p class="prod__zoomtip" data-i18n="p.zoom">Pasa el ratón por la foto para verla de cerca</p>
+      <a href="showroom.html" class="link-arrow prod__puesta" data-p-puesta><span data-i18n="p.puesta">Verla puesta en el showroom</span><i aria-hidden="true"></i></a>
+    </div>
+
+    <div class="prod__info">
+      <p class="label">Drop 01 · Gotee Designs</p>
+      <h1 class="prod__nombre" data-p-nombre>Sudadera Rayas</h1>
+      <p class="prod__desc" data-p-desc></p>
+
+      <div class="prod__bloque">
+        <p class="prod__k"><span data-i18n="p.color">Color</span> — <b data-p-color>Marrón / Azul claro</b></p>
+        <div class="swatches" role="radiogroup" aria-label="Color" data-p-colores></div>
+      </div>
+
+      <div class="prod__bloque" data-p-logo hidden>
+        <p class="prod__k" data-i18n="p.logo">Logo del pecho</p>
+        <div class="seg" role="group">
+          <button type="button" data-logo="pequeno" aria-pressed="true" data-i18n="fo.logoP">Logo pequeño</button>
+          <button type="button" data-logo="grande" aria-pressed="false" data-i18n="fo.logoG">Logo grande</button>
+        </div>
+      </div>
+
+      <ul class="specs prod__specs">
+        <li><span data-i18n="p.precio">Precio</span><span data-i18n="p.precioV">El día del drop</span></li>
+      </ul>
+      <p class="prod__tallas" data-i18n="p.tallas">Tallas y unidades se anuncian el día del drop.</p>
+
+      <form class="form" novalidate data-form data-origen="producto">
+        <label class="form__label" for="email-p" data-i18n="p.avisar">Avísame cuando salga</label>
+        <div class="form__row">
+          <input id="email-p" name="email" type="email" autocomplete="email" inputmode="email" data-i18n-ph="form.ph" placeholder="tu@email.com" required>
+          <button type="submit" class="btn" data-magnetic><span data-i18n="form.btn">Avisarme</span></button>
+        </div>
+        <p class="form__error" role="alert" aria-live="polite"></p>
+        <div class="form__ok" aria-live="polite" hidden>
+          <svg viewBox="0 0 150 245" aria-hidden="true"><use href="sprite.svg#mon-a07"/></svg>
+          <p data-i18n="form.ok">Dentro. Te avisamos el día del drop.</p>
+        </div>
+      </form>
+
+      <details class="prod__det" open>
+        <summary data-i18n="p.detalles">Detalles</summary>
+        <ul class="specs" data-p-detalles></ul>
+      </details>
+    </div>
+  </section>
+
+  <section class="otros">
+    <div class="otros__head">
+      <h2 class="title" data-i18n="p.otros">También en el Drop 01</h2>
+      <a href="productos.html" class="link-arrow"><span data-i18n="p.volver">Volver al armario</span><i aria-hidden="true"></i></a>
+    </div>
+    <ul class="otros__lista" data-p-otros></ul>
+  </section>
+</main>
+
+<!-- PIE (igual en todas las páginas) -->
+<footer class="foot">
+  <svg class="foot__g" viewBox="0 0 273 148" aria-hidden="true"><use href="sprite.svg#logo-a11"/></svg>
+  <nav class="foot__links" aria-label="Pie">
+    <a href="productos.html" data-i18n="nav.productos">Productos</a>
+    <a href="showroom.html" data-i18n="nav.showroom">Showroom</a>
+    <a href="lookbook.html" data-i18n="nav.lookbook">Lookbook</a>
+    <a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a>
+    <a href="lista.html" data-i18n="nav.cta">Lista de espera</a>
+    <a href="#" data-social="instagram">Instagram</a>
+    <a href="#" data-social="tiktok">TikTok</a>
+  </nav>
+  <p class="foot__copy" data-i18n="foot.copy">Gotee Studio® · Est. 2026, Andalucía.</p>
+</footer>
+
+<script src="app.js?v=13"></script>
+<script src="catalogo.js?v=13"></script>
+<script src="producto.js?v=13"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOTEE® — Drop 01</title>
+  <meta name="description" content="GOTEE: ropa ancha, colores de tierra y un monigote que va contigo. Apúntate a la lista de espera del Drop 01.">
+  <meta name="theme-color" content="#F3EEE6">
+  <meta property="og:title" content="GOTEE® — Drop 01">
+  <meta property="og:description" content="Gotta get Gotee. Lista de espera abierta.">
+  <meta property="og:image" content="img/lookbook-rayas.webp">
+  <link rel="icon" type="image/svg+xml" href="logos/A07_monigote-de-pie.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=13">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body data-page="inicio">
+
+<!-- CABECERA (igual en todas las páginas) -->
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__logo" aria-label="GOTEE">
+    <svg viewBox="0 0 303 129" aria-hidden="true"><use href="sprite.svg#logo-a01"/></svg>
+  </a>
+  <nav class="nav__links" aria-label="Menú">
+    <a href="productos.html" data-i18n="nav.productos">Productos</a>
+    <a href="showroom.html" data-i18n="nav.showroom">Showroom</a>
+    <a href="lookbook.html" data-i18n="nav.lookbook">Lookbook</a>
+    <a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a>
+  </nav>
+  <div class="nav__right">
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a href="lista.html" class="btn btn--small nav__cta" data-i18n="nav.cta">Lista de espera</a>
+    <button type="button" class="nav__burger" aria-expanded="false" aria-controls="menu" aria-label="Menú"><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav class="menu__links" aria-label="Menú">
+    <a href="index.html"><small>00</small><span data-i18n="nav.inicio">Inicio</span></a>
+    <a href="productos.html"><small>01</small><span data-i18n="nav.productos">Productos</span></a>
+    <a href="showroom.html"><small>02</small><span data-i18n="nav.showroom">Showroom</span></a>
+    <a href="lookbook.html"><small>03</small><span data-i18n="nav.lookbook">Lookbook</span></a>
+    <a href="nosotros.html"><small>04</small><span data-i18n="nav.nosotros">Nosotros</span></a>
+    <a href="lista.html"><small>05</small><span data-i18n="nav.cta">Lista de espera</span></a>
+  </nav>
+  <p class="menu__foot">Gotee Studio® · Orbiting Andalusia</p>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__text">
+      <p class="label reveal"><span class="dot"></span><span data-i18n="hero.label">Drop 01 · Lista de espera abierta</span></p>
+      <h1 class="hero__title reveal" data-i18n-html="hero.title">Gotta<br>get <em>Gotee.</em></h1>
+      <p class="hero__sub reveal" data-i18n="hero.sub">Sudaderas de rayas, camisetas anchas y un monigote que se viene contigo. El primer drop sale pronto y la lista se entera antes.</p>
+
+      <form class="form reveal" novalidate data-form>
+        <label class="form__label" for="email-1" data-i18n="form.label">Tu email</label>
+        <div class="form__row">
+          <input id="email-1" name="email" type="email" autocomplete="email" inputmode="email" data-i18n-ph="form.ph" placeholder="tu@email.com" required>
+          <button type="submit" class="btn" data-magnetic><span data-i18n="form.btn">Avisarme</span></button>
+        </div>
+        <p class="form__note" data-i18n="form.note">Un correo cuando salga. Nada más.</p>
+        <p class="form__error" role="alert" aria-live="polite"></p>
+        <div class="form__ok" aria-live="polite" hidden>
+          <svg viewBox="0 0 150 245" aria-hidden="true"><use href="sprite.svg#mon-a07"/></svg>
+          <p data-i18n="form.ok">Dentro. Te avisamos el día del drop.</p>
+        </div>
+      </form>
+      <a href="productos.html" class="link-arrow reveal"><span data-i18n="cta.armario">Ver el armario</span><i aria-hidden="true"></i></a>
+    </div>
+
+    <div class="hero__media reveal">
+      <figure class="hero__photo">
+        <img src="img/rayas-delante.webp" alt="" data-i18n-alt="alt.hero" width="460" height="1024" fetchpriority="high">
+      </figure>
+      <div class="badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs><path id="circulo" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+          <text><textPath href="#circulo" textLength="462" lengthAdjust="spacing" data-i18n="badge">ORBITING ANDALUSIA · GOTEE DESIGNS · </textPath></text>
+        </svg>
+        <svg class="badge__star" viewBox="0 0 24 24"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z"/></svg>
+      </div>
+      <div class="hero__mon" data-follow aria-hidden="true">
+        <svg viewBox="0 0 150 245"><use href="sprite.svg#mon-a07"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__group">
+        <span>Gotta get Gotee</span><i></i><span>Siesta approved</span><i></i><span>Made in the south, worn everywhere</span><i></i><span>Hecho con arte</span><i></i><span>Orbiting Andalusia</span><i></i>
+      </span>
+      <span class="marquee__group">
+        <span>Gotta get Gotee</span><i></i><span>Siesta approved</span><i></i><span>Made in the south, worn everywhere</span><i></i><span>Hecho con arte</span><i></i><span>Orbiting Andalusia</span><i></i>
+      </span>
+    </div>
+  </div>
+
+  <!-- COLORWAYS -->
+  <section class="rayas" id="rayas">
+    <div class="rayas__head reveal">
+      <p class="label" data-i18n="ray.label">01 — Sudadera Rayas</p>
+      <h2 class="title" data-i18n="ray.title">Cinco colores. Un solo corte.</h2>
+    </div>
+
+    <div class="rayas__grid">
+      <figure class="rayas__look reveal">
+        <img src="img/modelos-marron.webp" alt="" data-look width="299" height="430">
+      </figure>
+
+      <div class="rayas__info reveal">
+        <p class="rayas__desc" data-i18n="ray.desc">Rayas finas, hombro caído y corte ancho. GOTEE pequeño delante y grande en la espalda.</p>
+
+        <div class="swatches" role="radiogroup" aria-label="Color" data-ray-swatches>
+          <button type="button" role="radio" class="swatch" data-c="beige" style="--a:#E6DCCB;--b:#4A3020" aria-checked="false"><span class="sr" data-i18n="c.beige">Beige / Marrón</span></button>
+          <button type="button" role="radio" class="swatch" data-c="azul" style="--a:#A9CBEA;--b:#F2D64B" aria-checked="false"><span class="sr" data-i18n="c.azul">Azul claro / Amarillo</span></button>
+          <button type="button" role="radio" class="swatch" data-c="burdeos" style="--a:#2B1C1C;--b:#8E1F2C" aria-checked="false"><span class="sr" data-i18n="c.burdeos">Negro / Burdeos</span></button>
+          <button type="button" role="radio" class="swatch" data-c="marino" style="--a:#2B3550;--b:#EFE6D2" aria-checked="false"><span class="sr" data-i18n="c.marino">Azul marino / Crema</span></button>
+          <button type="button" role="radio" class="swatch" data-c="marron" style="--a:#4D3423;--b:#9CC4EA" aria-checked="true"><span class="sr" data-i18n="c.marron">Marrón / Azul claro</span></button>
+        </div>
+        <p class="rayas__name" data-name>Marrón / Azul claro</p>
+
+        <figure class="rayas__flat">
+          <img src="img/plano-marron.webp" alt="" data-flat width="299" height="240">
+        </figure>
+
+        <ul class="specs">
+          <li><span data-i18n="spec.1k">Corte</span><span data-i18n="spec.1v">Ancho, largo cropped</span></li>
+          <li><span data-i18n="spec.2k">Logo</span><span data-i18n="spec.2v">Delante y en la espalda</span></li>
+          <li><span data-i18n="spec.3k">Precio</span><span data-i18n="spec.3v">El día del drop</span></li>
+        </ul>
+        <a href="producto.html?p=sud&amp;c=marron" class="link-arrow" data-ray-link><span data-i18n="p.ver">Ver producto</span><i aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAMISETA -->
+  <section class="tee" id="camiseta">
+    <div class="tee__media reveal">
+      <div class="tee__flip" data-flip>
+        <img class="tee__face tee__face--front" src="img/tee-oliva-delante.webp" alt="" data-tee-front width="1000" height="1000" loading="lazy">
+        <img class="tee__face tee__face--back" src="img/tee-oliva-detras.webp" alt="" data-tee-back width="1000" height="1000" loading="lazy">
+      </div>
+    </div>
+    <div class="tee__text reveal">
+      <p class="label" data-i18n="tee.label">02 — Camiseta Ancha</p>
+      <h2 class="title" data-i18n-html="tee.title">Delante, discreta.<br>Detrás, <em>él.</em></h2>
+      <p class="body" data-i18n="tee.desc">Corte boxy y cuello de canalé, en cinco colores. Delante el logo, Mon&amp;Gotee's en la manga y el monigote en la etiqueta de la espalda.</p>
+
+      <div class="swatches swatches--tee" role="radiogroup" aria-label="Color" data-tee-swatches>
+        <button type="button" role="radio" class="swatch" data-c="oliva" style="--a:#878D55;--b:#878D55" aria-checked="true"><span class="sr" data-i18n="t.oliva">Verde oliva</span></button>
+        <button type="button" role="radio" class="swatch" data-c="arena" style="--a:#D1BA9D;--b:#D1BA9D" aria-checked="false"><span class="sr" data-i18n="t.arena">Beige arena</span></button>
+        <button type="button" role="radio" class="swatch" data-c="mantequilla" style="--a:#F0D999;--b:#F0D999" aria-checked="false"><span class="sr" data-i18n="t.mantequilla">Amarillo mantequilla</span></button>
+        <button type="button" role="radio" class="swatch" data-c="cielo" style="--a:#9DBED5;--b:#9DBED5" aria-checked="false"><span class="sr" data-i18n="t.cielo">Azul cielo</span></button>
+        <button type="button" role="radio" class="swatch" data-c="petroleo" style="--a:#1D4657;--b:#1D4657" aria-checked="false"><span class="sr" data-i18n="t.petroleo">Azul petróleo</span></button>
+      </div>
+      <p class="rayas__name" data-tee-name>Verde oliva</p>
+      <div class="tee__actions">
+        <button type="button" class="btn btn--ghost" data-flip-btn aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8.7M20 4v4.7h-4.7M20 12a8 8 0 0 1-13.7 5.6L4 15.3M4 20v-4.7h4.7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-flip-label data-i18n="tee.back">Ver espalda</span>
+        </button>
+        <a href="producto.html?p=tee&amp;c=oliva" class="link-arrow" data-tee-link><span data-i18n="p.ver">Ver producto</span><i aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOOKBOOK -->
+  <section class="look reveal">
+    <a href="lookbook.html" class="look__frame">
+      <img src="img/lookbook-rayas.webp" alt="" data-i18n-alt="alt.look" width="1536" height="1024" loading="lazy">
+      <span class="look__cap"><span data-i18n="look.cap">Sudadera Rayas, marrón / azul claro. El monigote va escondido en el bajo.</span></span>
+      <span class="look__go"><span data-i18n="cta.lookbook">Ver el lookbook</span><i aria-hidden="true"></i></span>
+    </a>
+  </section>
+
+  <!-- MANIFIESTO -->
+  <section class="manifiesto">
+    <div class="manifiesto__text">
+      <p class="label reveal">Gotee Designs · Est. 2026</p>
+      <h2 class="manifiesto__title reveal">A Spanish touch<br>on an English <em>label.</em></h2>
+      <ul class="manifiesto__tags reveal">
+        <li>Made for Andalusians</li>
+        <li>Made in the south, worn everywhere</li>
+        <li>Hecho con arte</li>
+      </ul>
+      <a href="nosotros.html" class="link-arrow reveal"><span data-i18n="cta.historia">Nuestra historia</span><i aria-hidden="true"></i></a>
+    </div>
+    <div class="manifiesto__orbita reveal" aria-hidden="true">
+      <img src="logos/A03_orbita.svg" alt="" loading="lazy">
+    </div>
+  </section>
+
+  <!-- LISTA FINAL -->
+  <section class="final" id="lista">
+    <div class="final__mon" data-follow aria-hidden="true">
+      <svg viewBox="0 0 150 245"><use href="sprite.svg#mon-a07"/></svg>
+    </div>
+    <div class="final__text">
+      <h2 class="final__title reveal" data-i18n-html="final.title">Quédate<br>en el <em>drop.</em></h2>
+      <p class="final__sub reveal" data-i18n="final.sub">No te pierdas ni una gota.</p>
+      <form class="form form--dark reveal" novalidate data-form>
+        <label class="form__label" for="email-2" data-i18n="form.label">Tu email</label>
+        <div class="form__row">
+          <input id="email-2" name="email" type="email" autocomplete="email" inputmode="email" data-i18n-ph="form.ph" placeholder="tu@email.com" required>
+          <button type="submit" class="btn btn--light" data-magnetic><span data-i18n="form.btn">Avisarme</span></button>
+        </div>
+        <p class="form__note" data-i18n="form.note">Un correo cuando salga. Nada más.</p>
+        <p class="form__error" role="alert" aria-live="polite"></p>
+        <div class="form__ok" aria-live="polite" hidden>
+          <svg viewBox="0 0 150 245" aria-hidden="true"><use href="sprite.svg#mon-a07"/></svg>
+          <p data-i18n="form.ok">Dentro. Te avisamos el día del drop.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- PIE (igual en todas las páginas) -->
+<footer class="foot">
+  <svg class="foot__g" viewBox="0 0 273 148" aria-hidden="true"><use href="sprite.svg#logo-a11"/></svg>
+  <nav class="foot__links" aria-label="Pie">
+    <a href="productos.html" data-i18n="nav.productos">Productos</a>
+    <a href="showroom.html" data-i18n="nav.showroom">Showroom</a>
+    <a href="lookbook.html" data-i18n="nav.lookbook">Lookbook</a>
+    <a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a>
+    <a href="lista.html" data-i18n="nav.cta">Lista de espera</a>
+    <a href="#" data-social="instagram">Instagram</a>
+    <a href="#" data-social="tiktok">TikTok</a>
+  </nav>
+  <p class="foot__copy" data-i18n="foot.copy">Gotee Studio® · Est. 2026, Andalucía.</p>
+</footer>
+
+<script src="app.js?v=13"></script>
+</body>
+</html>
+
+
